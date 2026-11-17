@@ -1,28 +1,426 @@
 [
   {
-    "id": "hci_evaluation_methods",
-    "subjectId": "hci_evaluation_methods",
+    "id": "hci_mvc_architecture",
+    "subjectId": "hci_mvc_architecture",
     "questionType": "Identification, Enumeration",
     "questions": [
       {
         "type": "identification",
-        "question": "What concept refers to how easy, efficient, and effective a system is to use?",
+        "question": "What software architecture pattern in HCI divides a system into three distinct parts: Model, View, and Controller?",
+        "answer": "Model-View-Controller (MVC)"
+      },
+      {
+        "type": "identification",
+        "question": "What is the primary purpose of using the Model-View-Controller (MVC) design pattern?",
+        "answer": "To make programs easier to build, understand, and fix"
+      },
+      {
+        "type": "identification",
+        "question": "Which component of MVC is described as the 'brain' of the system, managing data and logic?",
+        "answer": "Model"
+      },
+      {
+        "type": "identification",
+        "question": "Which component of MVC represents the 'face' of the system, showing what the user sees?",
+        "answer": "View"
+      },
+      {
+        "type": "identification",
+        "question": "Which component of MVC represents the 'hands' of the system, handling what the user does?",
+        "answer": "Controller"
+      },
+      {
+        "type": "identification",
+        "question": "In the restaurant analogy for MVC, what role corresponds to the Model?",
+        "answer": "Kitchen"
+      },
+      {
+        "type": "identification",
+        "question": "In the restaurant analogy for MVC, what role corresponds to the View?",
+        "answer": "Menu + food served"
+      },
+      {
+        "type": "identification",
+        "question": "In the restaurant analogy for MVC, what role corresponds to the Controller?",
+        "answer": "Waiter"
+      },
+      {
+        "type": "identification",
+        "question": "Which component of MVC stores and manages the system's data and rules?",
+        "answer": "Model"
+      },
+      {
+        "type": "identification",
+        "question": "Which MVC component updates data when something changes but does not care about how things look on screen?",
+        "answer": "Model"
+      },
+      {
+        "type": "identification",
+        "question": "What happens to a program if it lacks a Model component?",
+        "answer": "The program has no knowledge to show"
+      },
+      {
+        "type": "identification",
+        "question": "Which component of MVC serves as the visual representation of the data?",
+        "answer": "View"
+      },
+      {
+        "type": "identification",
+        "question": "Which component of MVC changes automatically when the Model updates?",
+        "answer": "View"
+      },
+      {
+        "type": "identification",
+        "question": "What problem occurs if a program does not have a View component?",
+        "answer": "Users can't see or interact with the data"
+      },
+      {
+        "type": "identification",
+        "question": "Which MVC component acts as a bridge between the user and the system?",
+        "answer": "Controller"
+      },
+      {
+        "type": "identification",
+        "question": "Which component of MVC takes input from the user (such as clicks, taps, voice, or typing)?",
+        "answer": "Controller"
+      },
+      {
+        "type": "identification",
+        "question": "Which component of MVC decides what action to perform and tells the Model or View what to do?",
+        "answer": "Controller"
+      },
+      {
+        "type": "identification",
+        "question": "What limitation occurs if a system does not have a Controller?",
+        "answer": "The user cannot communicate with the system"
+      },
+      {
+        "type": "identification",
+        "question": "In the four-step execution flow of MVC, what component initially handles the user's input (click, tap, or type)?",
+        "answer": "Controller"
+      },
+      {
+        "type": "identification",
+        "question": "In the MVC interaction flow, what component does the Controller update immediately after receiving user input?",
+        "answer": "Model"
+      },
+      {
+        "type": "identification",
+        "question": "In the MVC flow, which component notifies the View when data changes?",
+        "answer": "Model"
+      },
+      {
+        "type": "identification",
+        "question": "In the final step of the MVC interaction flow, which component presents the updated information to the user?",
+        "answer": "View"
+      },
+      {
+        "type": "identification",
+        "question": "Which benefit of MVC refers to giving each part of the system its own specific job?",
+        "answer": "Separation of roles"
+      },
+      {
+        "type": "identification",
+        "question": "Which benefit of MVC allows web designers to work on the visual aspect while programmers build data logic?",
+        "answer": "Easy to maintain"
+      },
+      {
+        "type": "identification",
+        "question": "Which benefit of MVC allows one Model component to work with multiple different Views?",
+        "answer": "Reusability"
+      },
+      {
+        "type": "identification",
+        "question": "Which benefit of MVC ensures that modifications made in one part of the system do not break the other parts?",
+        "answer": "Flexibility"
+      },
+      {
+        "type": "identification",
+        "question": "In the human body analogy for MVC, what part represents the Model?",
+        "answer": "Brain"
+      },
+      {
+        "type": "identification",
+        "question": "In the human body analogy for MVC, what part represents the Controller?",
+        "answer": "Hands"
+      },
+      {
+        "type": "identification",
+        "question": "In the human body analogy for MVC, what part represents the View?",
+        "answer": "Face"
+      },
+      {
+        "type": "identification",
+        "question": "In the music app analogy for MVC, what component does the song data represent?",
+        "answer": "Model"
+      },
+      {
+        "type": "identification",
+        "question": "In the music app analogy for MVC, what component does the playlist screen represent?",
+        "answer": "View"
+      },
+      {
+        "type": "identification",
+        "question": "In the music app analogy for MVC, what component does the play button represent?",
+        "answer": "Controller"
+      },
+      {
+        "type": "identification",
+        "question": "What overall working concept is MVC compared to because each part has its own responsibility to make the system run smoothly?",
+        "answer": "Teamwork"
+      },
+      {
+        "type": "identification",
+        "question": "Where is food prepared in the restaurant analogy, representing data and logic in the Model?",
+        "answer": "Kitchen"
+      },
+      {
+        "type": "identification",
+        "question": "What person delivers orders between the kitchen and the customer in the restaurant analogy for the Controller?",
+        "answer": "Waiter"
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the three core components of the MVC design pattern.",
+        "answers": [
+          "Model",
+          "View",
+          "Controller"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the short nicknames describing the roles of Model, View, and Controller in order.",
+        "answers": [
+          "The brain (data & logic)",
+          "The face (what you see)",
+          "The hands (what you do)"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the three goals stated for why MVC makes programs easier.",
+        "answers": [
+          "Build",
+          "Understand",
+          "Fix"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the three elements of the restaurant analogy and their corresponding MVC parts.",
+        "answers": [
+          "Kitchen (Model)",
+          "Menu + food served (View)",
+          "Waiter (Controller)"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate three functions or characteristics of the Model component.",
+        "answers": [
+          "Knows everything about the system's content",
+          "Updates data when something changes",
+          "Does not care about how things look on screen"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate two functions of the View component.",
+        "answers": [
+          "Shows information to the user in a friendly way",
+          "Changes automatically when the Model updates"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate three functions of the Controller component.",
+        "answers": [
+          "Takes input from the user (clicks, taps, voice, typing)",
+          "Decides what action to perform",
+          "Tells the Model or View what to do"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate four user input examples handled by the Controller.",
+        "answers": [
+          "Clicks",
+          "Taps",
+          "Voice",
+          "Typing"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the four steps of how MVC works together in order.",
+        "answers": [
+          "User does something (click, tap, type) -> handled by Controller",
+          "Controller updates the Model (changes data)",
+          "Model notifies the View of changes",
+          "View shows the updated information to the User"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate four main benefits of using the MVC design pattern.",
+        "answers": [
+          "Separation of roles",
+          "Easy to maintain",
+          "Reusability",
+          "Flexibility"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the two specialist roles mentioned in 'Easy to maintain' that can work independently on View and Model.",
+        "answers": [
+          "Designers (work on View)",
+          "Programmers (work on Model)"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the three body parts used in the human body analogy for MVC.",
+        "answers": [
+          "Brain (Model)",
+          "Face (View)",
+          "Hands (Controller)"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the three elements of a music app and their corresponding MVC components.",
+        "answers": [
+          "Song data (Model)",
+          "Playlist screen (View)",
+          "Play button (Controller)"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate what missing each component causes: (1) Without Model, (2) Without View, (3) Without Controller.",
+        "answers": [
+          "Without Model: the program has no knowledge to show",
+          "Without View: users can't see or interact with the data",
+          "Without Controller: the user cannot communicate with the system"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate two areas of computer science where MVC is explicitly applied as a design pattern.",
+        "answers": [
+          "Human-Computer Interaction (HCI)",
+          "Software design"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the two things customer sees in the restaurant analogy representing the View.",
+        "answers": [
+          "Menu",
+          "Food served"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate two elements stored and managed by the Model.",
+        "answers": [
+          "Data",
+          "Rules"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the two components that the Controller can instruct or tell what to do.",
+        "answers": [
+          "Model",
+          "View"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the two components connected by the Controller acting as a bridge.",
+        "answers": [
+          "User",
+          "System"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate two characteristics of the View's display style.",
+        "answers": [
+          "Visual representation of data",
+          "Shows information in a friendly way"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate two aspects handled by the Model as the brain of the system.",
+        "answers": [
+          "Data",
+          "Logic"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate three analogies used in the chapter to explain MVC.",
+        "answers": [
+          "Restaurant",
+          "Human body",
+          "Music app"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate two key characteristics of teamwork highlighted in the MVC summary.",
+        "answers": [
+          "Each part has its own responsibility",
+          "Together they make the system run smoothly"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the two destinations the waiter in the restaurant analogy delivers orders between.",
+        "answers": [
+          "Kitchen",
+          "You (Customer)"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate the two components involved when the Controller tells them what to do after deciding an action.",
+        "answers": [
+          "Model",
+          "View"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hci_usability_ux_evaluation",
+    "subjectId": "hci_usability_ux_evaluation",
+    "questionType": "Identification, Enumeration",
+    "questions": [
+      {
+        "type": "identification",
+        "question": "What quality describes how easy, efficient, and effective a system is to use?",
         "answer": "Usability"
       },
       {
         "type": "identification",
-        "question": "What type of usability measurement is determined through performance tasks such as counting clicks or timing an action?",
-        "answer": "Quantitative"
+        "question": "Which aspect of usability is measured through performance tasks such as click counts or completion times?",
+        "answer": "Quantitative usability"
       },
       {
         "type": "identification",
-        "question": "What type of usability measurement is based on user opinions, feedback, and surveys regarding how simple or tiring a system feels?",
-        "answer": "Qualitative"
+        "question": "Which aspect of usability is based on user opinions, feedback, and surveys regarding how simple or tiring a system feels?",
+        "answer": "Qualitative usability"
       },
       {
         "type": "identification",
         "question": "What evaluation tool often includes questions involving ease of use, ease of learning, fatigue, and simple preference?",
-        "answer": "Usability Survey"
+        "answer": "Usability survey"
       },
       {
         "type": "identification",
@@ -31,141 +429,165 @@
       },
       {
         "type": "identification",
-        "question": "What is the simplest evaluation method that involves talking to users or watching them use the system?",
+        "question": "What dimension of evaluation covers how enjoyable, intuitive, and stress-free an application feels?",
+        "answer": "User Experience (UX)"
+      },
+      {
+        "type": "identification",
+        "question": "What is described as the simplest evaluation method involving talking to users or watching them use the system?",
         "answer": "Interview / Observation"
       },
       {
         "type": "identification",
-        "question": "What evaluation method involves users thinking aloud while using the system to describe what they are doing and why?",
+        "question": "Which evaluation method helps identify problems that designers might miss by directly talking to or observing users?",
+        "answer": "Interview / Observation"
+      },
+      {
+        "type": "identification",
+        "question": "In which evaluation method do users \"think aloud\" while using the system, describing what they are doing and why?",
         "answer": "Cognitive Walkthrough"
       },
       {
         "type": "identification",
-        "question": "What evaluation method involves usability experts reviewing a system using established principles?",
+        "question": "Which evaluation method reveals users' thought processes and points of confusion as they describe their actions in real time?",
+        "answer": "Cognitive Walkthrough"
+      },
+      {
+        "type": "identification",
+        "question": "What method involves usability experts reviewing a system using established principles?",
         "answer": "Expert Heuristic Evaluation"
       },
       {
         "type": "identification",
-        "question": "What term is used for the established principles used by usability experts during an evaluation?",
+        "question": "What are the established design principles used by usability experts during an evaluation called?",
         "answer": "Heuristics"
       },
       {
         "type": "identification",
-        "question": "Whose ten General UI heuristics are highlighted as standard principles for expert heuristic evaluation?",
-        "answer": "Nielsen"
+        "question": "Who created the ten General UI heuristics widely used in expert heuristic evaluation?",
+        "answer": "Jakob Nielsen"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic states that the system should keep users informed about what is going on through appropriate feedback?",
+        "question": "Which Nielsen heuristic requires that the system always keep users informed about system status through appropriate feedback?",
         "answer": "Visibility of system status"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic emphasizes speaking the users' language with words, phrases, and concepts familiar to the user rather than system-oriented terms?",
+        "question": "Which Nielsen heuristic specifies that the system should speak the users' language with familiar words, phrases, and concepts?",
         "answer": "Match between system and the real world"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic provides users with freedom and an easy way to exit unwanted system states?",
+        "question": "Which Nielsen heuristic provides users with an \"emergency exit\" to leave unwanted states without extended dialogue?",
         "answer": "User control and freedom"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic states that users should not have to wonder whether different words, situations, or actions mean the same thing?",
+        "question": "Which Nielsen heuristic ensures that users do not have to wonder whether different words, situations, or actions mean the same thing?",
         "answer": "Consistency and standards"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic focuses on eliminating error-prone conditions or warning users before they commit to an action?",
+        "question": "Which Nielsen heuristic focuses on careful design that prevents a problem from occurring in the first place?",
         "answer": "Error prevention"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic minimizes the user's memory load by making objects, actions, and options visible rather than forcing memory retrieval?",
+        "question": "Which Nielsen heuristic emphasizes making objects, actions, and options visible so users do not have to remember information across dialogues?",
         "answer": "Recognition rather than recall"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic allows shortcuts for expert users to speed up interactions while still accommodating inexperienced users?",
+        "question": "Which Nielsen heuristic allows shortcuts to speed up interaction for expert users while accommodating inexperienced users?",
         "answer": "Flexibility and efficiency of use"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic specifies that dialogues should not contain information that is irrelevant or rarely needed?",
+        "question": "Which Nielsen heuristic states that dialogues should not contain information that is irrelevant or rarely needed?",
         "answer": "Aesthetic and minimalist design"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic ensures error messages are expressed in plain language, indicate the problem, and suggest a constructive solution?",
+        "question": "Which Nielsen heuristic states that error messages should be expressed in plain language, indicate the problem, and suggest a solution?",
         "answer": "Help users recognize, diagnose, and recover from errors"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic provides information and documentation to help users complete their tasks when needed?",
+        "question": "Which Nielsen heuristic ensures that help and documentation are accessible when users need assistance completing tasks?",
         "answer": "Help and documentation"
       },
       {
         "type": "identification",
-        "question": "What evaluation step involves collecting numerical or survey-based data to measure interface effectiveness?",
+        "question": "What evaluation step involves collecting numerical or survey-based data to measure effectiveness?",
         "answer": "Measurement"
       },
       {
         "type": "identification",
-        "question": "What authorization must participants give before participating in a user interface evaluation?",
+        "question": "What mandatory ethical protocol requires users to be informed about an evaluation and voluntarily agree before participating?",
         "answer": "Informed consent"
       },
       {
         "type": "identification",
-        "question": "What fundamental right must participants always retain whenever they feel uncomfortable during an evaluation?",
+        "question": "What ethical right allows participants to cease participation at any time if they feel uncomfortable?",
         "answer": "Right to stop"
       },
       {
         "type": "identification",
-        "question": "In quantitative usability, what metric measures the duration required to complete an action?",
-        "answer": "Time"
+        "question": "Which principle requires evaluations to be respectful, safe, and protective of participants' well-being?",
+        "answer": "Safety & Ethics"
       },
       {
         "type": "identification",
-        "question": "In quantitative usability, what metric measures the number of user inputs required to complete an action?",
+        "question": "What specific performance metric counts user selection actions to complete a given task?",
         "answer": "Number of clicks"
       },
       {
         "type": "identification",
-        "question": "What specific user insights are revealed by a cognitive walkthrough during task performance?",
-        "answer": "Thought process and points of confusion"
+        "question": "What quantitative usability metric tracks how long a participant takes to complete an action?",
+        "answer": "Time to complete an action"
       },
       {
         "type": "identification",
-        "question": "What primary benefit does interview/observation offer that designers might otherwise experience?",
-        "answer": "Helps identify problems that designers might miss"
+        "question": "What qualitative survey metric evaluates physical or mental weariness resulting from interface interaction?",
+        "answer": "Fatigue"
       },
       {
         "type": "identification",
-        "question": "Besides satisfaction and overall feeling, what emotional aspect is part of User Experience (UX)?",
-        "answer": "Emotional connection"
+        "question": "Which evaluation goal ensures that the overall interaction with the system is positive and enjoyable?",
+        "answer": "User Experience (UX)"
       },
       {
         "type": "identification",
-        "question": "What type of UI evaluation data involves satisfaction scores, error rates, or task completion time?",
-        "answer": "Measurement data"
+        "question": "What form of data includes satisfaction scores, task times, and error rates to quantify system performance?",
+        "answer": "Numerical data"
       },
       {
         "type": "identification",
-        "question": "Ethical UI evaluation guidelines state that evaluations must be both safe and what?",
-        "answer": "Respectful"
+        "question": "What quality ensures that the entire evaluation process focuses on the rights, safety, and comfort of the user?",
+        "answer": "User-centered evaluation"
+      },
+      {
+        "type": "identification",
+        "question": "Which real-time technique asks users to articulate their actions while navigating a system to highlight confusion?",
+        "answer": "Think aloud"
+      },
+      {
+        "type": "identification",
+        "question": "What observation technique involves directly watching users interact with an interface to discover unstated issues?",
+        "answer": "Observation"
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the three attributes used to define usability in Chapter 5.",
+        "question": "Enumerate the two main criteria for evaluating human-computer interaction.",
         "answers": [
-          "Easy to use",
-          "Efficient to use",
-          "Effective to use"
+          "Usability",
+          "User Experience (UX)"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two classifications of usability measurements.",
+        "question": "Enumerate the two forms of usability measurements.",
         "answers": [
           "Quantitative",
           "Qualitative"
@@ -173,7 +595,7 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two performance task metrics used for quantitative usability measurement.",
+        "question": "Enumerate two examples of performance tasks used in quantitative usability measurement.",
         "answers": [
           "How many clicks",
           "How much time it takes to complete an action"
@@ -181,16 +603,15 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate three sources of qualitative usability data.",
+        "question": "Enumerate two sources of qualitative usability feedback.",
         "answers": [
           "User opinions",
-          "Feedback",
           "Surveys"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate four common topics addressed in a Usability Survey.",
+        "question": "Enumerate four key elements commonly assessed in a usability survey.",
         "answers": [
           "Ease of use",
           "Ease of learning",
@@ -200,7 +621,7 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate three aspects of interaction covered by User Experience (UX).",
+        "question": "Enumerate three qualities that describe a positive user experience (UX).",
         "answers": [
           "Enjoyable",
           "Intuitive",
@@ -209,7 +630,7 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the three UI evaluation methods discussed in the material.",
+        "question": "Enumerate the three evaluation methods detailed in the study material.",
         "answers": [
           "Interview / Observation",
           "Cognitive Walkthrough",
@@ -218,7 +639,7 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two ways to conduct an interview/observation evaluation.",
+        "question": "Enumerate two actions involved in the Interview / Observation evaluation method.",
         "answers": [
           "Talk to users",
           "Watch users use the system"
@@ -226,7 +647,7 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two things users explain while performing a cognitive walkthrough.",
+        "question": "Enumerate two descriptions users articulate during a cognitive walkthrough.",
         "answers": [
           "What they are doing",
           "Why they are doing it"
@@ -234,15 +655,15 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two key insights revealed through a cognitive walkthrough.",
+        "question": "Enumerate two key insights revealed by a cognitive walkthrough.",
         "answers": [
-          "User thought process",
+          "Thought process",
           "Points of confusion"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the first five of Nielsen's ten General UI heuristics.",
+        "question": "Enumerate the first five of Nielsen's General UI heuristics.",
         "answers": [
           "Visibility of system status",
           "Match between system and the real world",
@@ -253,7 +674,7 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the remaining five (6 to 10) of Nielsen's ten General UI heuristics.",
+        "question": "Enumerate the remaining five of Nielsen's General UI heuristics (heuristics 6 through 10).",
         "answers": [
           "Recognition rather than recall",
           "Flexibility and efficiency of use",
@@ -280,7 +701,7 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate three types of data collected during the measurement stage of evaluation.",
+        "question": "Enumerate three types of metrics collected during measurement.",
         "answers": [
           "Time",
           "Error rates",
@@ -289,15 +710,15 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two safety and ethical guidelines for participant evaluations.",
+        "question": "Enumerate two ethical requirements for conducting evaluations with participants.",
         "answers": [
-          "Users should give informed consent before participating",
-          "Participants should always have the right to stop whenever they feel uncomfortable"
+          "Informed consent",
+          "Right to stop whenever uncomfortable"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the three key outcomes ensured by evaluating a user interface as listed in the summary.",
+        "question": "Enumerate the three outcomes ensured by evaluating a user interface as listed in the summary.",
         "answers": [
           "The system is easy to use (usability)",
           "The experience is positive and enjoyable (UX)",
@@ -306,31 +727,16 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two qualitative perceptions users may have about a system's interface.",
+        "question": "Enumerate three attributes defining usability.",
         "answers": [
-          "How simple the system feels",
-          "How tiring the system feels"
+          "Easy",
+          "Efficient",
+          "Effective"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two forms of data collected to measure effectiveness in UI evaluation.",
-        "answers": [
-          "Numerical data",
-          "Survey-based data"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate the two core criteria used to evaluate user interfaces.",
-        "answers": [
-          "Usability",
-          "User Experience (UX)"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate three key qualities of user experience beyond basic functionality.",
+        "question": "Enumerate three aspects of user connection and response evaluated in UX.",
         "answers": [
           "Overall feeling",
           "Satisfaction",
@@ -339,39 +745,7 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two specific qualitative feedback descriptors mentioned for UX.",
-        "answers": [
-          "Intuitive",
-          "Stress-free"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two principles of ethical participant treatment during interface testing.",
-        "answers": [
-          "Informed consent",
-          "Right to stop"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two characteristics of expert heuristic evaluation.",
-        "answers": [
-          "Conducted by usability experts",
-          "Uses established principles called heuristics"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two reasons why interview/observation is beneficial.",
-        "answers": [
-          "It is the simplest evaluation method",
-          "Helps identify problems that designers might miss"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two requirements for evaluation safety and ethics.",
+        "question": "Enumerate two standards required for safe and respectful evaluations.",
         "answers": [
           "Safe",
           "Respectful"
@@ -379,42 +753,51 @@
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two task performance dimensions measured quantitatively.",
+        "question": "Enumerate two participant protections outlined under Safety & Ethics.",
         "answers": [
-          "Clicks",
-          "Time"
+          "Give informed consent before participating",
+          "Right to stop whenever feeling uncomfortable"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two main pillars of Nielsen's heuristics that address errors.",
+        "question": "Enumerate three heuristics focused on error handling and efficiency.",
         "answers": [
           "Error prevention",
+          "Flexibility and efficiency of use",
           "Help users recognize, diagnose, and recover from errors"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two heuristics that deal with system language and system state visibility.",
+        "question": "Enumerate two heuristics concerning interface appearance and feedback.",
         "answers": [
           "Visibility of system status",
-          "Match between system and the real world"
+          "Aesthetic and minimalist design"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two heuristics that address system design aesthetics and documentation.",
+        "question": "Enumerate two heuristics addressing mental effort and familiarity.",
         "answers": [
-          "Aesthetic and minimalist design",
-          "Help and documentation"
+          "Match between system and the real world",
+          "Recognition rather than recall"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two heuristics that focus on user memory and user flexibility.",
+        "question": "Enumerate two heuristics promoting consistency and user autonomy.",
         "answers": [
-          "Recognition rather than recall",
-          "Flexibility and efficiency of use"
+          "User control and freedom",
+          "Consistency and standards"
+        ]
+      },
+      {
+        "type": "enumeration",
+        "question": "Enumerate two formats of data gathered during effectiveness measurement.",
+        "answers": [
+          "Numerical data",
+          "Survey-based data"
         ]
       }
     ]

@@ -1,40 +1,135 @@
 [
   {
-    "id": "hci_evaluation_methods",
-    "subjectId": "hci_evaluation_methods",
-    "title": "Human-Computer Interaction: UI Evaluation Criteria and Methods",
-    "summary": "Evaluating a user interface involves assessing usability and user experience through various evaluation methods while maintaining safety and ethical standards.",
+    "id": "hci_mvc_architecture",
+    "subjectId": "hci_mvc_architecture",
+    "title": "Chapter 6: Model-View-Controller (MVC) Pattern",
+    "summary": "Model–View–Controller (MVC) is a design pattern in Human–Computer Interaction and software design that divides a system into three distinct parts—Model, View, and Controller—to make programs easier to build, understand, and maintain.",
     "sections": [
       {
-        "title": "1. Evaluation Criteria: Usability",
+        "title": "Introduction to Model–View–Controller (MVC)",
         "paragraphs": [
-          "Usability is about how easy, efficient, and effective a system is to use.",
-          "Usability Survey: Often includes questions involving the ease of use, ease of learning, fatigue, simple preference, and other questions specific to the given interface."
+          "Model–View–Controller (MVC) is a design pattern in Human–Computer Interaction (HCI) and software design.",
+          "Purpose: To make programs easier to build, understand, and fix.",
+          "Think of MVC like a restaurant:"
         ],
         "list": [
-          "Quantitative: Measured through performance tasks (e.g., how many clicks, how much time it takes to complete an action).",
-          "Qualitative: Based on user opinions, feedback, and surveys (e.g., how simple or tiring the system feels)."
+          "Model – the brain (data & logic) / kitchen (where the food is prepared = data/logic)",
+          "View – the face (what you see) / menu + food served (what the customer sees)",
+          "Controller – the hands (what you do) / waiter (takes your order and delivers it between kitchen and you)"
         ]
       },
       {
-        "title": "Evaluation Criteria: User Experience (UX)",
+        "title": "Model (The Brain of the System)",
+        "paragraphs": [
+          "Stores and manages the system’s data and rules.",
+          "Without the Model, the program has no knowledge to show."
+        ],
+        "list": [
+          "Knows everything about the system’s content.",
+          "Updates data when something changes.",
+          "Does not care about how things look on screen."
+        ]
+      },
+      {
+        "title": "View (The Face of the System)",
+        "paragraphs": [
+          "The visual representation of the data.",
+          "Without the View, users can’t see or interact with the data."
+        ],
+        "list": [
+          "Shows information to the user in a friendly way.",
+          "Changes automatically when the Model updates."
+        ]
+      },
+      {
+        "title": "Controller (The Hands of the System)",
+        "paragraphs": [
+          "Acts as a bridge between the user and the system.",
+          "Without the Controller, the user cannot communicate with the system."
+        ],
+        "list": [
+          "Takes input from the user (clicks, taps, voice, typing).",
+          "Decides what action to perform.",
+          "Tells the Model or View what to do."
+        ]
+      },
+      {
+        "title": "How MVC Works Together (Flow)",
+        "paragraphs": [],
+        "list": [
+          "User does something (click, tap, type) -> handled by Controller.",
+          "Controller updates the Model (changes data).",
+          "Model notifies the View of changes.",
+          "View shows the updated information to the User."
+        ]
+      },
+      {
+        "title": "Benefits of MVC",
+        "paragraphs": [],
+        "list": [
+          "Separation of roles: Each part has its own job.",
+          "Easy to maintain: Designers can work on View, programmers on Model.",
+          "Reusability: One Model can work with different Views.",
+          "Flexibility: Changes in one part don’t break the others."
+        ]
+      },
+      {
+        "title": "Quick Analogy Recap",
+        "paragraphs": [
+          "Remember: MVC is like teamwork. Each part has its own responsibility, and together they make the system run smoothly."
+        ],
+        "list": [
+          "Restaurant: Kitchen (Model), Waiter (Controller), Served food (View).",
+          "Human body: Brain (Model), Hands (Controller), Face (View).",
+          "Music app: Song data (Model), Playlist screen (View), Play button (Controller)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hci_usability_ux_evaluation",
+    "subjectId": "hci_usability_ux_evaluation",
+    "title": "Chapter 5: Usability and User Experience Evaluation",
+    "summary": "Evaluating a user interface ensures that the system is easy to use (usability), the experience is positive and enjoyable (UX), and the process is safe, ethical, and user-centered.",
+    "sections": [
+      {
+        "title": "Usability",
+        "paragraphs": [
+          "Usability is about how easy, efficient, and effective a system is to use."
+        ],
+        "list": [
+          "Quantitative: Measured through performance tasks (e.g., how many clicks, how much time it takes to complete an action).",
+          "Qualitative: Based on user opinions, feedback, and surveys (e.g., how simple or tiring the system feels).",
+          "Usability Survey: Often includes questions involving the ease of use, ease of learning, fatigue, simple preference, and other questions specific to the given interface."
+        ]
+      },
+      {
+        "title": "User Experience (UX)",
         "paragraphs": [
           "UX is more than usability it’s about the overall feeling, satisfaction, and emotional connection users have while interacting with the system. Covers how enjoyable, intuitive, and stress-free the app feels."
         ],
         "list": []
       },
       {
-        "title": "2. Evaluation Methods",
-        "paragraphs": [],
-        "list": [
-          "INTERVIEW / OBSERVATION: The simplest way: talk to users or watch them use the system. Helps identify problems that designers might miss.",
-          "COGNITIVE WALKTHROUGH: Users \"think aloud\" while using the system. They describe what they are doing and why. This reveals their thought process and points of confusion.",
-          "EXPERT HEURISTIC EVALUATION: Usability experts review the system using established principles called heuristics."
-        ]
+        "title": "Interview / Observation",
+        "paragraphs": [
+          "The simplest way: talk to users or watch them use the system. Helps identify problems that designers might miss."
+        ],
+        "list": []
       },
       {
-        "title": "Nielsen's Ten General UI Heuristics",
-        "paragraphs": [],
+        "title": "Cognitive Walkthrough",
+        "paragraphs": [
+          "Users “think aloud” while using the system. They describe what they are doing and why. This reveals their thought process and points of confusion."
+        ],
+        "list": []
+      },
+      {
+        "title": "Expert Heuristic Evaluation",
+        "paragraphs": [
+          "Usability experts review the system using established principles called heuristics.",
+          "Nielsen’s ten General UI heuristics:"
+        ],
         "list": [
           "Visibility of system status",
           "Match between system and the real world",
@@ -56,7 +151,7 @@
         "list": []
       },
       {
-        "title": "3. Safety & Ethics",
+        "title": "Safety & Ethics",
         "paragraphs": [
           "Evaluations must be safe and respectful. Users should give informed consent before participating. Participants should always have the right to stop whenever they feel uncomfortable."
         ],
